@@ -7,7 +7,7 @@ Follow these steps to quickly get up and running with the Xero API and Insomnia:
 ---
 
 ### 1. Download Insomnia Client
-Visit Insomnia and download the desktop client.
+Visit Insomnia and download the desktop client
 > http://insomnia.rest/
 
 ---
