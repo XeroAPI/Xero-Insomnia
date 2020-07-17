@@ -16,13 +16,13 @@ If you haven't already signed up for a xero account you can do so [here](https:/
 
 
 ### 3. Pick a collection to import
-Import Basic
+**Import Basic**
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Insomnia%20(Basic)&uri=https%3A%2F%2Fraw.githubusercontent.com%2FSerKnight%2FXero-Insomnia%2Fmaster%2FInsomnia_basic.json)
 > This collections has an authentication route, and a **Get Invoices** route. A blank slate for your XeroAPI exploration needs.
-* [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Insomnia%20(Basic)&uri=https%3A%2F%2Fraw.githubusercontent.com%2FSerKnight%2FXero-Insomnia%2Fmaster%2FInsomnia_basic.json)
 
-Import Full
-> This collection has a majority of the XeroAPI endpoints built out. Helpful to understand the entire scope of all of Xero's API.
+**Import Full**
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Xero%20API%20(Full)&uri=https%3A%2F%2Fraw.githubusercontent.com%2FSerKnight%2FXero-Insomnia%2Fmaster%2FInsomnia_full.json)
+> This collection has a majority of the XeroAPI endpoints built out. Helpful to understand the entire scope of all of Xero's API.
 
 ### 4. Add your client_id key and client_secret to the environment variables in Insomnia
 Copy the keys from your app into the environment variables section in Insomnia.
