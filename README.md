@@ -7,14 +7,15 @@ Follow these steps to quickly get up and running with the Xero API and Insomnia:
 ---
 
 ### 1. Download Insomnia Client
-Visit Insomnia and download the desktop client
+Visit Insomnia and download the desktop client.
+> http://insomnia.rest/
 
 ---
 
 ### 2. Create an app at
 > https://developer.xero.com/myapps
 
-Go to the Xero developer portal and create an API app. If you haven't already signed up for a xero account you can [signup here](https://www.xero.com/signup/api/).
+In the Xero developer portal create an API app. If you haven't signed up for a xero account you can [signup here](https://www.xero.com/signup/api/)
 
 ----
 
@@ -33,7 +34,7 @@ Go to the Xero developer portal and create an API app. If you haven't already si
 ---
 
 ### 4. Add your client_id key and client_secret to the environment variables in Insomnia
-Copy the keys from your app into the environment variables section in Insomnia.
+Copy the keys from your app into the environment variables section in Insomnia
 
 ---
 
