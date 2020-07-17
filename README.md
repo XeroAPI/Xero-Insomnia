@@ -14,15 +14,18 @@ Go to the Xero developer portal and create an API app
 
 If you haven't already signed up for a xero account you can do so [here](https://www.xero.com/signup/api/).
 
+----
+## 3. Pick a collection to import
 
-### 3. Pick a collection to import
-**Import Basic**
+### **Import Basic**
 [![Import into Insomnia (XeroAPI Basic collection)}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Insomnia%20(Basic)&uri=https%3A%2F%2Fraw.githubusercontent.com%2FSerKnight%2FXero-Insomnia%2Fmaster%2FInsomnia_basic.json)
-> This collections has an authentication route, and a **Get Invoices** route. A blank slate for your XeroAPI exploration needs.
+> This collections has a single authentication route and one sample API call
 
-**Import Full**
+### **Import Full**
 [![Import into Insomnia (XeroAPI Full Collection)}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Xero%20API%20(Full)&uri=https%3A%2F%2Fraw.githubusercontent.com%2FSerKnight%2FXero-Insomnia%2Fmaster%2FInsomnia_full.json)
-> This collection has a majority of the XeroAPI endpoints built out. Helpful to understand the entire scope of all of Xero's API.
+> This collection has the majority of the XeroAPI endpoints already built out
+
+---
 
 ### 4. Add your client_id key and client_secret to the environment variables in Insomnia
 Copy the keys from your app into the environment variables section in Insomnia.
