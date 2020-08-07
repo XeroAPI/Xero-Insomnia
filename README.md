@@ -38,7 +38,7 @@ _This collection has the majority of the XeroAPI endpoints already built out._
 ---
 
 ### 4. Add your client_id, client_secret, and scopes to the environment variables in Insomnia
-Get the id & secrete from your /myapps API app.
+Get the id & secret from your /myapps API app.
 
 Then read & pick your scopes.
 > https://developer.xero.com/documentation/oauth2/scopes
@@ -85,7 +85,9 @@ You can continually visit the `Authentication` route to refresh a token by click
 
 ---
 
-**IMPORTANT** you need tocopy/paste a refreshed `access_token` into the env variables section each refresh
+**IMPORTANT**
 
-(_~13 min video tutorial on setting up Insomnia from scratch_)
+You will need to copy/paste your refreshed `access_token` into the env variables section each time you refresh your token_set.
+
+_~13 min video tutorial on setting up Insomnia from scratch_
 > https://www.youtube.com/watch?v=H_k8Z8Zq99s
