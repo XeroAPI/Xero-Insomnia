@@ -15,9 +15,9 @@ Visit Insomnia and download the desktop client.
 ### 2. Create an API app
 > https://developer.xero.com/myapps
 
-In the Xero developer portal create an API app. If you haven't signed up for a xero account you can [signup here](https://www.xero.com/signup/api/).
+In the Xero developer portal create an API app. If you haven't signed up for a xero developer account you can [do that here](https://www.xero.com/signup/api/).
 
-![paste in environment keys](images/new-app.png)
+![create new api app](images/new-app.png)
 ----
 
 ## 3. Pick a collection to import
@@ -47,6 +47,7 @@ At a minimun you probably want `"openid profile email offline_access accounting.
 
 
 Finally, copy those 3 items into this file in your desktop client.
+
 ![paste in environment keys](images/env.png)
 
 ---
@@ -59,11 +60,15 @@ Click 'Fetch Tokens' which will prompt a Xero login screen.
 
 Once you return it should populate the access & refresh token.
 
-You can now click `Send` which will hit the `/connections` endpoint and return your active API connections. Chose a `tenant_id`.
+You can now add an actual request to the Authorize OAuth2 panel to hit the /connections route via POST which will use the access_token to return your active connections.
+
+Once the /connection route is setup, click `Send`, this will return your active API connections. Chose a `tenantId` to populate in your environment file's empty `tenant_id` value.
 
 ![xero-login](images/post-auth.png)
 
 Then paste both the `tenant_id` & the `access_token` into the environment file.
+
+![access-token-paste](images/access-token.png)
 
 
 ---
