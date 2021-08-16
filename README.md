@@ -17,6 +17,8 @@ Visit Insomnia and download the desktop client.
 
 In the Xero developer portal create an API app.
 
+Set 'OAuth 2.0 redirect uri' to: "https://localhost/"
+
 > If you haven't signed up for a xero developer account you can [do that here](https://www.xero.com/signup/api/).
 
 ![create new api app](images/new-app.png)
