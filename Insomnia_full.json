@@ -416,7 +416,7 @@
 			"headers": [
 				{
 					"name": "Authorization",
-					"value": "Basic {{ _.basic_auth_header }}"
+					"value": "Basic {{ _.basic_auth_header }}",
 					"description": "",
 					"id": "pair_7486d11757a74976bd66ff2765eddbc9"
 				},
