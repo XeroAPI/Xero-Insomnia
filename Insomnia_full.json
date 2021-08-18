@@ -238,7 +238,7 @@
 			"parentId": "fld_3f0f914d582b422dafab25f7aca7ad00",
 			"modified": 1627913626546,
 			"created": 1627913530634,
-			"url": "https://api.xero.com/assets.xro/1.0/Assets?status=REGISTEREDhttps://api.xero.com/connections/<connection-id>",
+			"url": "https://identity.xero.com/connect/revocation",
 			"name": "Revoke Token",
 			"description": "",
 			"method": "POST",
@@ -267,7 +267,7 @@
 					"description": "",
 					"id": "pair_2df00064e9d54d22a23c6a30a919c298",
 					"name": "Authorization",
-					"value": "Basic QkY5Rjk1OUM3QzI5NDNDNzhFNTBBMUEwOEQ2RDBBRkU6UHVRcE9mdGc0V1M2WU56UWV5X05tU08tTXJuMFFpbm9MQmpubGdFQWFWNlhkMy0y"
+					"value": "Basic {{ _.basic_auth_header }}"
 				}
 			],
 			"authentication": {
@@ -6829,7 +6829,9 @@
 				"refresh_token": "copy/paste refresh token if you want to test manual refresh/revoke methods",
 				"access_token": "copy/paste access_token here once generated",
 				"tenant_id": "copy/paste xero-tenant-id here once generated",
-				"oauth2_token_url_suffix": "connect/token"
+				"oauth2_token_url_suffix": "connect/token",
+				"concat_id_secret": "{{_.client_id}}:{{_.client_secret}}",
+				"basic_auth_header": "{% base64 'encode', 'normal', _.concat_basic_auth %}"
 			},
 			"dataPropertyOrder": {
 				"&": [
