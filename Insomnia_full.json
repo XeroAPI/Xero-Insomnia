@@ -310,13 +310,7 @@
 					"description": "",
 					"id": "pair_7924e660a73c4eda97d6279c6241353b",
 					"name": "Authorization",
-					"value": "OAuth oauth_consumer_key='',    oauth_token='',    oauth_signature_method='RSA-SHA1',    oauth_signature='',    oauth_timestamp='',    oauth_nonce='',    oauth_version='1.0'"
-				},
-				{
-					"description": "",
-					"id": "pair_2fd03a55da8844baa9fcc4f7cc023864",
-					"name": "",
-					"value": ""
+					"value": "Basic {{ _.basic_auth_header }}"
 				}
 			],
 			"authentication": {
