@@ -211,7 +211,7 @@
 					"description": "",
 					"id": "pair_2df00064e9d54d22a23c6a30a919c298",
 					"name": "Authorization",
-					"value": "Basic QkY5Rjk1OUM3QzI5NDNDNzhFNTBBMUEwOEQ2RDBBRkU6UHVRcE9mdGc0V1M2WU56UWV5X05tU08tTXJuMFFpbm9MQmpubGdFQWFWNlhkMy0y"
+					"value": "Basic {{ _.basic_auth_header }}"
 				},
 				{
 					"description": "",
@@ -416,7 +416,7 @@
 			"headers": [
 				{
 					"name": "Authorization",
-					"value": "Basic base64encode(client_id + \":\" + client_secret)",
+					"value": "Basic {{ _.basic_auth_header }}"
 					"description": "",
 					"id": "pair_7486d11757a74976bd66ff2765eddbc9"
 				},
