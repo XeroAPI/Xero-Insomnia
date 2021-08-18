@@ -6825,7 +6825,7 @@
 				"tenant_id": "copy/paste xero-tenant-id here once generated",
 				"oauth2_token_url_suffix": "connect/token",
 				"concat_id_secret": "{{_.client_id}}:{{_.client_secret}}",
-				"basic_auth_header": "{% base64 'encode', 'normal', _.concat_basic_auth %}"
+				"basic_auth_header": "{% base64 'encode', 'normal', _.concat_id_secret %}"
 			},
 			"dataPropertyOrder": {
 				"&": [
@@ -6836,7 +6836,9 @@
 					"refresh_token",
 					"access_token",
 					"tenant_id",
-					"oauth2_token_url_suffix"
+					"oauth2_token_url_suffix",
+					"concat_id_secret",
+					"basic_auth_header"
 				]
 			},
 			"color": null,
