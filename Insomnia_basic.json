@@ -1,1 +1,214 @@
-{"_type":"export","__export_format":4,"__export_date":"2020-07-17T20:32:00.939Z","__export_source":"insomnia.desktop.app:v2020.3.3","resources":[{"_id":"req_4eba5383d3a746b9aef94301a53b716e","authentication":{"accessTokenUrl":"https://identity.xero.com/connect/token","authorizationUrl":"https://login.xero.com/identity/connect/authorize","clientId":"{{ client_id  }}","clientSecret":"{{ client_secret  }}","grantType":"authorization_code","redirectUrl":"{{ redirect_uri  }}","scope":"{{ scopes  }}","type":"oauth2"},"body":{},"created":1586810114995,"description":"","headers":[],"isPrivate":false,"metaSortKey":-1587054878549,"method":"GET","modified":1587055553339,"name":"Authorization","parameters":[],"parentId":"wrk_196a02113cdf4cea8828282631505b5d","settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingFollowRedirects":"global","settingRebuildPath":true,"settingSendCookies":true,"settingStoreCookies":true,"url":"https://api.xero.com/connections","_type":"request"},{"_id":"wrk_196a02113cdf4cea8828282631505b5d","created":1586797845342,"description":"Insomnia collection with the basic authentication endpoints to get started exploring the [XeroAPI](https://developer.xero.com/documentation/). Plug in your unique API app params and extend the included example (Get Invoices) to build out a REST cleint env related to your needs.","modified":1595009473927,"name":"XeroAPI (Basic)","parentId":null,"scope":null,"_type":"workspace"},{"_id":"req_f3247b24b836429ca1a2dcc91befdf89","authentication":{"token":"{{ access_token }}","type":"bearer"},"body":{},"created":1586810426069,"description":"","headers":[{"description":"","id":"pair_9b759659f9bd410ba1cf147069bc2242","name":"Accept","value":"application/json"},{"description":"","id":"pair_afe56bc50acb44869d274cc84c683f84","name":"xero-tenant-id","value":"{{ tenant_id }}"}],"isPrivate":false,"metaSortKey":-1586810114945,"method":"GET","modified":1595009461152,"name":"Get Invoices","parameters":[],"parentId":"wrk_196a02113cdf4cea8828282631505b5d","settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingFollowRedirects":"global","settingRebuildPath":true,"settingSendCookies":true,"settingStoreCookies":true,"url":"https://api.xero.com/api.xro/2.0/Invoices","_type":"request"},{"_id":"env_34871112698b4680edc2a5ed15c6c6f9790ccff6","color":null,"created":1586797845358,"data":{"access_token":"","client_id":"","client_secret":"","redirect_uri":"https://developer.xero.com/","scopes":"","tenant_id":""},"dataPropertyOrder":{"&":["client_id","client_secret","redirect_uri","scopes","access_token","tenant_id"]},"isPrivate":false,"metaSortKey":1586797845359,"modified":1595008924950,"name":"Base Environment","parentId":"wrk_196a02113cdf4cea8828282631505b5d","_type":"environment"},{"_id":"jar_34871112698b4680edc2a5ed15c6c6f9790ccff6","cookies":[{"creation":"2020-04-13T18:17:50.171Z","domain":"identity.xero.com","expires":"2025-04-13T18:17:49.000Z","extensions":["SameSite=none"],"hostOnly":true,"httpOnly":true,"id":"04945093455196514","key":"Device","lastAccessed":"2020-04-13T18:17:50.171Z","path":"/","value":"a242230bd7f745fdb186c26e46e9d659"},{"creation":"2020-04-13T18:17:50.171Z","domain":"xero.com","expires":"2020-07-17T22:02:14.000Z","hostOnly":false,"httpOnly":true,"id":"1362342852418703","key":"bm_sz","lastAccessed":"2020-07-17T18:02:16.005Z","maxAge":14399,"path":"/","value":"C9068DAE3AB2FA71CC535E87234C6884~YAAQBNrJFzD05k1zAQAAAeXwXQgjTvIWy537eDMkIlZsNn2q3AzqhODSvcJrAyosH+Ae5Fuve31ybGUfdjCqJx7iklasAXvuxeBfyXtKur2Huc5ISlQyCmyve1EXyaZjsxk2Q3ImowC9/xCjsl/Lfz9m3JOrWI9YLwymPaXB8XAMQlrvijF9ToFVsn8="},{"creation":"2020-04-13T18:17:50.172Z","domain":"xero.com","expires":"2021-07-17T18:02:15.000Z","hostOnly":false,"id":"4512902949272226","key":"_abck","lastAccessed":"2020-07-17T18:02:16.005Z","maxAge":31536000,"path":"/","secure":true,"value":"1CDBE5340B5223FF0952B4ED4E54E185~-1~YAAQBNrJFzH05k1zAQAAAeXwXQSxjifSaK23+YQs9RF9ovFKzx0M3EElFBcwrZM/7QnuvGMK52GgcXDiG/RVepI0PGeVOpD9GQdvcZwmGDjKqmu/gkCGwLzsPYH8Uxpvg86+Z2nWDYnqiYU1LHVOcRckQt4tBfmnqf9GXcaUKJY8ClEBvUD6VsluXty67M3mkAT1yVRgWii0VOCNRoDMzj35mI7F8UhKP6bCZA9sG1tQ4X7SXtVIc4JF40grBYfFklM0vk+7n1Eq9eDNild0HkaWaKvGBWx8109UCnoxogXth7wHReF2v5fw+dPccMW1hIo4nMwO~-1~-1~-1"},{"creation":"2020-04-13T18:19:54.372Z","domain":"xero.com","expires":"2020-07-17T20:02:15.000Z","hostOnly":false,"httpOnly":true,"id":"08501867613926173","key":"ak_bmsc","lastAccessed":"2020-07-17T18:02:16.004Z","maxAge":7200,"path":"/","value":"EF2A144724968D05B2005BEB6E66614F17C9DA040C070000A7E7115FA5D15656~plNxfwJOy7EQ42nYhhkDngmtd8RVm2UtRRBbqrZwZWynzl0YphJAXjtGObOGAfhmH1VSpW3SF9Tl22tzQzx0s7OxtpOttaZhonpG57ylVeu0qx1sqea426OTgsYASIWRoK2XYTph8+zn69FNfJy8RCoo1S+kALYWpMYeCXsyLBekaYiHudWqxVUFp6IT14+EUKTuJM27ywr/0Or83q9YejxHW0pjRuWA8itiumRYf4BrI="},{"creation":"2020-04-13T18:20:22.270Z","domain":"xero.com","hostOnly":false,"httpOnly":true,"id":"6490745553247301","key":"bm_sv","lastAccessed":"2020-04-16T17:03:51.541Z","maxAge":0,"path":"/","value":"565082450FF5CE6CD948D1001CA94B7F~BcStRSrGsqzz+WymKRSr+m1MzHSxxJQXQTkisY3ua9t6WOLQcu4/hnqWFImeKOHT0AKnKrIh6Hxy4wnl8HAWjOcX0Ro0r1rR4QPUVtWgFD1GtM51UuQ933mRTPYNoGQIINb5aDIvDTBH14iFIcCy4mhzJiJTR+we3v8srRojrJY="}],"created":1586797845360,"modified":1595008936005,"name":"Default Jar","parentId":"wrk_196a02113cdf4cea8828282631505b5d","_type":"cookie_jar"},{"_id":"spc_fa1c95c2e4a440c5a157d025b151c5f9","contentType":"yaml","contents":"","created":1591054906075,"fileName":"XeroAPI","modified":1591054906075,"parentId":"wrk_196a02113cdf4cea8828282631505b5d","_type":"api_spec"}]}
+{
+	"_type": "export",
+	"__export_format": 4,
+	"__export_date": "2020-07-17T20:32:00.939Z",
+	"__export_source": "insomnia.desktop.app:v2020.3.3",
+	"resources": [
+		{
+			"_id": "req_4eba5383d3a746b9aef94301a53b716e",
+			"authentication": {
+				"accessTokenUrl": "https://identity.xero.com/connect/token",
+				"authorizationUrl": "https://login.xero.com/identity/connect/authorize",
+				"clientId": "{{ client_id  }}",
+				"clientSecret": "{{ client_secret  }}",
+				"grantType": "authorization_code",
+				"redirectUrl": "{{ redirect_uri  }}",
+				"scope": "{{ scopes  }}",
+				"type": "oauth2"
+			},
+			"body": {
+
+			},
+			"created": 1586810114995,
+			"description": "",
+			"headers": [
+
+			],
+			"isPrivate": false,
+			"metaSortKey": -1587054878549,
+			"method": "GET",
+			"modified": 1587055553339,
+			"name": "Authorization",
+			"parameters": [
+
+			],
+			"parentId": "wrk_196a02113cdf4cea8828282631505b5d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingFollowRedirects": "global",
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://api.xero.com/connections",
+			"_type": "request"
+		},
+		{
+			"_id": "wrk_196a02113cdf4cea8828282631505b5d",
+			"created": 1586797845342,
+			"description": "Insomnia collection with the basic authentication endpoints to get started exploring the [XeroAPI](https://developer.xero.com/documentation/). Plug in your unique API app params and extend the included example (Get Invoices) to build out a REST cleint env related to your needs.",
+			"modified": 1595009473927,
+			"name": "XeroAPI (Basic)",
+			"parentId": null,
+			"scope": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "req_f3247b24b836429ca1a2dcc91befdf89",
+			"authentication": {
+				"token": "{{ access_token }}",
+				"type": "bearer"
+			},
+			"body": {
+
+			},
+			"created": 1586810426069,
+			"description": "",
+			"headers": [
+				{
+					"description": "",
+					"id": "pair_9b759659f9bd410ba1cf147069bc2242",
+					"name": "Accept",
+					"value": "application/json"
+				},
+				{
+					"description": "",
+					"id": "pair_afe56bc50acb44869d274cc84c683f84",
+					"name": "xero-tenant-id",
+					"value": "{{ tenant_id }}"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1586810114945,
+			"method": "GET",
+			"modified": 1595009461152,
+			"name": "Get Invoices",
+			"parameters": [
+
+			],
+			"parentId": "wrk_196a02113cdf4cea8828282631505b5d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingFollowRedirects": "global",
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://api.xero.com/api.xro/2.0/Invoices",
+			"_type": "request"
+		},
+		{
+			"_id": "env_34871112698b4680edc2a5ed15c6c6f9790ccff6",
+			"color": null,
+			"created": 1586797845358,
+			"data": {
+				"access_token": "",
+				"client_id": "",
+				"client_secret": "",
+				"redirect_uri": "https://localhost/",
+				"scopes": "",
+				"tenant_id": ""
+			},
+			"dataPropertyOrder": {
+				"&": [
+					"client_id",
+					"client_secret",
+					"redirect_uri",
+					"scopes",
+					"access_token",
+					"tenant_id"
+				]
+			},
+			"isPrivate": false,
+			"metaSortKey": 1586797845359,
+			"modified": 1595008924950,
+			"name": "Base Environment",
+			"parentId": "wrk_196a02113cdf4cea8828282631505b5d",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_34871112698b4680edc2a5ed15c6c6f9790ccff6",
+			"cookies": [
+				{
+					"creation": "2020-04-13T18:17:50.171Z",
+					"domain": "identity.xero.com",
+					"expires": "2025-04-13T18:17:49.000Z",
+					"extensions": [
+						"SameSite=none"
+					],
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "04945093455196514",
+					"key": "Device",
+					"lastAccessed": "2020-04-13T18:17:50.171Z",
+					"path": "/",
+					"value": "a242230bd7f745fdb186c26e46e9d659"
+				},
+				{
+					"creation": "2020-04-13T18:17:50.171Z",
+					"domain": "xero.com",
+					"expires": "2020-07-17T22:02:14.000Z",
+					"hostOnly": false,
+					"httpOnly": true,
+					"id": "1362342852418703",
+					"key": "bm_sz",
+					"lastAccessed": "2020-07-17T18:02:16.005Z",
+					"maxAge": 14399,
+					"path": "/",
+					"value": "C9068DAE3AB2FA71CC535E87234C6884~YAAQBNrJFzD05k1zAQAAAeXwXQgjTvIWy537eDMkIlZsNn2q3AzqhODSvcJrAyosH+Ae5Fuve31ybGUfdjCqJx7iklasAXvuxeBfyXtKur2Huc5ISlQyCmyve1EXyaZjsxk2Q3ImowC9/xCjsl/Lfz9m3JOrWI9YLwymPaXB8XAMQlrvijF9ToFVsn8="
+				},
+				{
+					"creation": "2020-04-13T18:17:50.172Z",
+					"domain": "xero.com",
+					"expires": "2021-07-17T18:02:15.000Z",
+					"hostOnly": false,
+					"id": "4512902949272226",
+					"key": "_abck",
+					"lastAccessed": "2020-07-17T18:02:16.005Z",
+					"maxAge": 31536000,
+					"path": "/",
+					"secure": true,
+					"value": "1CDBE5340B5223FF0952B4ED4E54E185~-1~YAAQBNrJFzH05k1zAQAAAeXwXQSxjifSaK23+YQs9RF9ovFKzx0M3EElFBcwrZM/7QnuvGMK52GgcXDiG/RVepI0PGeVOpD9GQdvcZwmGDjKqmu/gkCGwLzsPYH8Uxpvg86+Z2nWDYnqiYU1LHVOcRckQt4tBfmnqf9GXcaUKJY8ClEBvUD6VsluXty67M3mkAT1yVRgWii0VOCNRoDMzj35mI7F8UhKP6bCZA9sG1tQ4X7SXtVIc4JF40grBYfFklM0vk+7n1Eq9eDNild0HkaWaKvGBWx8109UCnoxogXth7wHReF2v5fw+dPccMW1hIo4nMwO~-1~-1~-1"
+				},
+				{
+					"creation": "2020-04-13T18:19:54.372Z",
+					"domain": "xero.com",
+					"expires": "2020-07-17T20:02:15.000Z",
+					"hostOnly": false,
+					"httpOnly": true,
+					"id": "08501867613926173",
+					"key": "ak_bmsc",
+					"lastAccessed": "2020-07-17T18:02:16.004Z",
+					"maxAge": 7200,
+					"path": "/",
+					"value": "EF2A144724968D05B2005BEB6E66614F17C9DA040C070000A7E7115FA5D15656~plNxfwJOy7EQ42nYhhkDngmtd8RVm2UtRRBbqrZwZWynzl0YphJAXjtGObOGAfhmH1VSpW3SF9Tl22tzQzx0s7OxtpOttaZhonpG57ylVeu0qx1sqea426OTgsYASIWRoK2XYTph8+zn69FNfJy8RCoo1S+kALYWpMYeCXsyLBekaYiHudWqxVUFp6IT14+EUKTuJM27ywr/0Or83q9YejxHW0pjRuWA8itiumRYf4BrI="
+				},
+				{
+					"creation": "2020-04-13T18:20:22.270Z",
+					"domain": "xero.com",
+					"hostOnly": false,
+					"httpOnly": true,
+					"id": "6490745553247301",
+					"key": "bm_sv",
+					"lastAccessed": "2020-04-16T17:03:51.541Z",
+					"maxAge": 0,
+					"path": "/",
+					"value": "565082450FF5CE6CD948D1001CA94B7F~BcStRSrGsqzz+WymKRSr+m1MzHSxxJQXQTkisY3ua9t6WOLQcu4/hnqWFImeKOHT0AKnKrIh6Hxy4wnl8HAWjOcX0Ro0r1rR4QPUVtWgFD1GtM51UuQ933mRTPYNoGQIINb5aDIvDTBH14iFIcCy4mhzJiJTR+we3v8srRojrJY="
+				}
+			],
+			"created": 1586797845360,
+			"modified": 1595008936005,
+			"name": "Default Jar",
+			"parentId": "wrk_196a02113cdf4cea8828282631505b5d",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "spc_fa1c95c2e4a440c5a157d025b151c5f9",
+			"contentType": "yaml",
+			"contents": "",
+			"created": 1591054906075,
+			"fileName": "XeroAPI",
+			"modified": 1591054906075,
+			"parentId": "wrk_196a02113cdf4cea8828282631505b5d",
+			"_type": "api_spec"
+		}
+	]
+}
