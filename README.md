@@ -29,7 +29,7 @@ Set 'OAuth 2.0 redirect uri' to: "https://localhost/"
 ### A) **Import (XeroAPI Basic collection)**
 _This collections has a single authentication route and one sample API call_
 
-[![Import into Insomnia (XeroAPI Basic collection)}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Insomnia%20(Basic)&uri=https%3A%2F%2Fraw.githubusercontent.com%2FSerKnight%2FXero-Insomnia%2Fmaster%2FInsomnia_basic.json)
+[![Import into Insomnia (XeroAPI Basic collection)}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Insomnia%20(Basic)&uri=https%3A%2F%2Fraw.githubusercontent.com%2FXeroAPI%2FXero-Insomnia%2Fmaster%2FInsomnia_basic.json)
 
 
 ---
@@ -37,7 +37,7 @@ _This collections has a single authentication route and one sample API call_
 ### B) **Import (XeroAPI Full Collection)**
 _This collection has the majority of the XeroAPI endpoints already built out_
 
-[![Import into Insomnia (XeroAPI Full Collection)}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Xero%20API%20(Full)&uri=https%3A%2F%2Fraw.githubusercontent.com%2FSerKnight%2FXero-Insomnia%2Fmaster%2FInsomnia_full.json) 
+[![Import into Insomnia (XeroAPI Full Collection)}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Xero%20API%20(Full)&uri=https%3A%2F%2Fraw.githubusercontent.com%2FXeroAPI%2FXero-Insomnia%2Fmaster%2FInsomnia_full.json) 
 
 ---
 
